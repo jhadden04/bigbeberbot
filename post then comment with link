@@ -1,0 +1,15 @@
+import praw
+reddit = praw.Reddit(client_id='*',
+                     client_secret='*',
+                     user_agent='*',
+                     username='*',
+                     password='*') # ask me how you make your own one of these
+
+
+subreddit = reddit.subreddit("test")
+titles = ["Link in comments"]
+reddit.validate_on_submit = True
+images = ["D:\jhadd\Pictures\Capture.PNG"]     # you would need to change this to the images that are on your own computer
+x = subreddit.submit_image(titles[0], images[0])
+x
+x.reply("https://en.wikipedia.org/wiki/Cristiano_Ronaldo")
