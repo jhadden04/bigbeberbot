@@ -20,6 +20,7 @@ def invite():
     for comment in sub.stream.comments():
         print(comment.body)
         reddit.subreddit('Johntestingpriv').contributor.add(comment.author.name)
+        reddit.redditor(comment.author.name).message("You have been invited to r/Johntestingpriv", "Lucky you!", from_subreddit= "Johntestingpriv")
         time.sleep(40)
 
 image_comment()
