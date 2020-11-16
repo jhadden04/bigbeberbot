@@ -6,7 +6,7 @@ reddit = praw.Reddit(client_id='Y96vOOmy2OfZoQ',
                      username='queenhailey1',
                      password='12334561233456')
 def image_comment():
-    subreddit = reddit.subreddit("Domina+Dominatrix+dommes")
+    subreddit = reddit.subreddit("onlyfansgirls101")
     titles = ["""The queen is here.
 Check in the comments."""]
     reddit.validate_on_submit = True
